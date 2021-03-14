@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  service1:
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    volumes:
+      - ./service1:/workspace/sources
+  service2:
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    volumes:
+      - ./service2:/workspace/sources
